@@ -1,0 +1,40 @@
+Intel(R) Advisor Command Line Tool
+Copyright (C) 2009-2019 Intel Corporation. All rights reserved.
+advixe: Warning: Can't find 32-bit pin tool. 32-bit processes will not be profiled.
+advixe: Collection started. To stop the collection, either press CTRL-C or enter from another console window: advixe-cl -r /home/ebruun/Workshop/parallel_computing/Vectorization/nbody-advisor/e000/hs000 -command stop.
+__bionic_open_tzdata_path: couldn't find any tzdata when looking for America/New_York!
+__bionic_open_tzdata_path: couldn't find any tzdata when looking for GMT!
+__bionic_open_tzdata_path: couldn't find any tzdata when looking for posixrules!
+
+Propagating 16384 particles using 1 thread on CPU...
+
+
+Particle data layout: Structure of Arrays (SoA)
+[1m Step    Time, s Interact/s  GFLOP/s Energy[0m
+    1  7.645e-02  3.511e+09     70.2 *      0.2
+    2  7.879e-02  3.407e+09     68.1 *      0.6
+    3  7.885e-02  3.404e+09     68.1 *      1.4
+    4  8.088e-02  3.319e+09     66.4       2.5
+    5  8.134e-02  3.300e+09     66.0       3.9
+    6  8.327e-02  3.223e+09     64.5       5.7
+    7  9.206e-02  2.916e+09     58.3       7.7
+    8  9.562e-02  2.807e+09     56.2      10.0
+    9  7.994e-02  3.358e+09     67.2      12.7
+   10  7.411e-02  3.622e+09     72.4      15.7
+-----------------------------------------------------
+[1mAverage performance:      [42m      64.4 +- 5.1 GFLOP/s[0m
+-----------------------------------------------------
+* - warm-up, not included in average
+
+advixe: Collection stopped.
+advixe: Opening result  0 %                                                    advixe: Opening result  0 % Finalizing results                                 advixe: Opening result  0 % Finalizing the result                              advixe: Opening result  0 % Clearing the database                              advixe: Opening result 10 % Clearing the database                              advixe: Opening result 10 % Loading raw data to the database                   advixe: Opening result 10 % Loading 'systemcollector-154123-adroit-11.sc' file advixe: Opening result 19 % Loading 'systemcollector-154123-adroit-11.sc' file advixe: Opening result 19 % Loading '154123-154128.0.trace' file               advixe: Opening result 19 % Updating precomputed scalar metrics                advixe: Opening result 21 % Updating precomputed scalar metrics                advixe: Opening result 21 % Processing profile metrics and debug information   advixe: Opening result 21 % Setting data model parameters                      advixe: Opening result 21 % Resolving module symbols                           advixe: Opening result 21 % Resolving information for `libc.so.6'              
+advixe: Warning: Cannot locate debugging information for file `/lib64/libc.so.6'.
+advixe: Opening result 23 % Resolving information for `libc.so.6'              advixe: Opening result 23 % Resolving information for `app-ICC'                advixe: Opening result 25 % Resolving information for `app-ICC'                advixe: Opening result 25 % Resolving bottom user stack information            advixe: Opening result 26 % Resolving bottom user stack information            advixe: Opening result 27 % Resolving bottom user stack information            advixe: Opening result 27 % Resolving thread name information                  advixe: Opening result 28 % Resolving thread name information                  advixe: Opening result 28 % Resolving call target names for dynamic code       advixe: Opening result 30 % Resolving call target names for dynamic code       advixe: Opening result 31 % Resolving call target names for dynamic code       advixe: Opening result 31 % Processing profile metrics and debug information   advixe: Opening result 34 % Processing profile metrics and debug information   advixe: Opening result 34 % Setting data model parameters                      advixe: Opening result 35 % Setting data model parameters                      advixe: Opening result 35 % Precomputing frequently used data                  advixe: Opening result 35 % Precomputing frequently used data                  advixe: Opening result 38 % Precomputing frequently used data                  advixe: Opening result 41 % Precomputing frequently used data                  advixe: Opening result 43 % Precomputing frequently used data                  advixe: Opening result 43 % Updating precomputed scalar metrics                advixe: Opening result 45 % Updating precomputed scalar metrics                advixe: Opening result 45 % Discarding redundant overtime data                 advixe: Opening result 48 % Discarding redundant overtime data                 advixe: Opening result 48 % Saving the result                                  advixe: Opening result 51 % Saving the result                                  advixe: Opening result 53 % Saving the result                                  advixe: Opening result 74 % Saving the result                                  advixe: Opening result 74 % Preparing data for display of survey call tree     advixe: Opening result 74 % Resolving module symbols                           advixe: Opening result 74 % Resolving information for dangling locations       advixe: Opening result 75 % Resolving information for dangling locations       advixe: Opening result 75 % Resolving bottom user stack information            advixe: Opening result 75 % Resolving thread name information                  advixe: Opening result 75 % Resolving call target names for dynamic code       advixe: Opening result 75 % Precomputing frequently used data                  advixe: Opening result 76 % Precomputing frequently used data                  advixe: Opening result 77 % Precomputing frequently used data                  advixe: Opening result 88 % Precomputing frequently used data                  advixe: Opening result 100 % Precomputing frequently used data                 advixe: Opening result 100 % done                                              
+advixe: Preparing frequently used data  0 % done                               advixe: Preparing frequently used data  0 % done                               
+advixe: Preparing frequently used data 100 % done                              
+
+Elapsed Time: 0.82s
+Total CPU time: 0.81
+Time in 1 vectorized loop: 0.789999
+Average estimated speedup of vectorized code compared to scalar version: 12.45x
+

@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<bag xmlns:boolean="http://www.w3.org/2001/XMLSchema#boolean" xmlns:int="http://www.w3.org/2001/XMLSchema#int" int:version="1">
+ <SurveyView>
+  <BottomUpGrid>
+   <ColumnStructure DefaultColumnLayout="Default"/>
+  </BottomUpGrid>
+  <RooflineChart rooflineState="{&quot;threadCount4RoofIdx&quot;:0,&quot;packageCount&quot;:1,&quot;roofsState&quot;:{&quot;int32vectoraddpeak&quot;:{&quot;selected&quot;:true},&quot;spvectoraddpeak&quot;:{&quot;selected&quot;:false},&quot;l1bandwidth&quot;:{&quot;selected&quot;:true},&quot;drambandwidth&quot;:{&quot;selected&quot;:true},&quot;drambandwidth(singlenode)&quot;:{&quot;selected&quot;:true},&quot;spvectorfmapeak&quot;:{&quot;selected&quot;:true},&quot;l2bandwidth&quot;:{&quot;selected&quot;:false},&quot;l3bandwidth&quot;:{&quot;selected&quot;:false},&quot;dpvectorfmapeak&quot;:{&quot;selected&quot;:false},&quot;scalaraddpeak&quot;:{&quot;selected&quot;:false},&quot;dpvectoraddpeak&quot;:{&quot;selected&quot;:false},&quot;integerscalaraddpeak&quot;:{&quot;selected&quot;:false},&quot;int64vectoraddpeak&quot;:{&quot;selected&quot;:false}}}"/>
+ </SurveyView>
+ <FilterView boolean:VectorizedButtonChecked="true" boolean:NotVectorizedButtonChecked="true" boolean:FakeLoopButtonChecked="false" boolean:LibrariesButtonChecked="false" ModuleFilterValue="All Modules" SourceFilterValue="All Sources" LoopModeFilterValue="Loops And Functions" ThreadFilterValue="All Threads"/>
+</bag>

@@ -1,0 +1,9 @@
+-r
+/home/ebruun/Workshop/parallel_computing/Vectorization/nbody-advisor/e000/trc000
+--return-app-exitcode
+--cs-mode=no-count-loops,no-count-flops,stack-stitching
+--count-flops
+--benchmarks=dram,mcdram,cpu_cache,flop_peak,int
+--cs-file=/home/ebruun/Workshop/parallel_computing/Vectorization/nbody-advisor/e000/callstacks.def
+--
+./app-ICC

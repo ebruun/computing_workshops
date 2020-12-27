@@ -1,0 +1,67 @@
+Intel(R) Advisor can now assist with vectorization and show optimization
+  report messages with your source code.
+See "https://software.intel.com/en-us/intel-advisor-xe" for details.
+
+Intel(R) C++ Intel(R) 64 Compiler for applications running on Intel(R) 64, Version 19.0.3.199 Build 20190206
+
+Compiler options: -c -O2 -xCORE-AVX512 -qopt-zmm-usage=high -DNo_FP_Conv -DSoA -DAligned -qopenmp -g -qopt-report=5 -qopt-report-phase=vec -inline-level=0 -qopt-report-filter=nbody.cc,56-111 -qopt-report-file=nbody.oicc.optrpt -o nbody.oicc
+
+Begin optimization report for: MoveParticles(int, ParticleArrays &, float)
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at nbody.cc(56,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at nbody.cc(77,5)
+   <Peeled loop for vectorization>
+      remark #15389: vectorization support: reference xp[j] has unaligned access   [ nbody.cc(80,24) ]
+      remark #15389: vectorization support: reference yp[j] has unaligned access   [ nbody.cc(81,24) ]
+      remark #15389: vectorization support: reference zp[j] has unaligned access   [ nbody.cc(82,24) ]
+      remark #15381: vectorization support: unaligned access used inside loop body
+      remark #15305: vectorization support: vector length 16
+      remark #15309: vectorization support: normalized vectorization overhead 0.293
+      remark #15301: PEEL LOOP WAS VECTORIZED
+      remark #15450: unmasked unaligned unit stride loads: 3 
+      remark #15475: --- begin vector cost summary ---
+      remark #15476: scalar cost: 102 
+      remark #15477: vector cost: 6.930 
+      remark #15478: estimated potential speedup: 12.440 
+      remark #15488: --- end vector cost summary ---
+   LOOP END
+
+   LOOP BEGIN at nbody.cc(77,5)
+      remark #15389: vectorization support: reference xp[j] has unaligned access   [ nbody.cc(80,24) ]
+      remark #15389: vectorization support: reference yp[j] has unaligned access   [ nbody.cc(81,24) ]
+      remark #15389: vectorization support: reference zp[j] has unaligned access   [ nbody.cc(82,24) ]
+      remark #15381: vectorization support: unaligned access used inside loop body
+      remark #15305: vectorization support: vector length 16
+      remark #15309: vectorization support: normalized vectorization overhead 1.153
+      remark #15300: LOOP WAS VECTORIZED
+      remark #15450: unmasked unaligned unit stride loads: 3 
+      remark #15475: --- begin vector cost summary ---
+      remark #15476: scalar cost: 102 
+      remark #15477: vector cost: 6.930 
+      remark #15478: estimated potential speedup: 12.440 
+      remark #15488: --- end vector cost summary ---
+   LOOP END
+
+   LOOP BEGIN at nbody.cc(77,5)
+   <Remainder loop for vectorization>
+      remark #15389: vectorization support: reference xp[j] has unaligned access   [ nbody.cc(80,24) ]
+      remark #15389: vectorization support: reference yp[j] has unaligned access   [ nbody.cc(81,24) ]
+      remark #15389: vectorization support: reference zp[j] has unaligned access   [ nbody.cc(82,24) ]
+      remark #15381: vectorization support: unaligned access used inside loop body
+      remark #15305: vectorization support: vector length 16
+      remark #15309: vectorization support: normalized vectorization overhead 0.293
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+      remark #15450: unmasked unaligned unit stride loads: 3 
+      remark #15475: --- begin vector cost summary ---
+      remark #15476: scalar cost: 102 
+      remark #15477: vector cost: 6.930 
+      remark #15478: estimated potential speedup: 12.440 
+      remark #15488: --- end vector cost summary ---
+   LOOP END
+LOOP END
+===========================================================================
